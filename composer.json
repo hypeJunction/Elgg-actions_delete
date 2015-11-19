@@ -1,0 +1,24 @@
+{
+	"name": "hypejunction/actions_delete",
+	"type": "elgg-plugin",
+	"description": "Generic delete action",
+	"homepage": "http://hypejunction.com",
+	"keywords": [
+		"elgg", "plugin", "actions", "delete"
+	],
+	"license": "GPL-2.0",
+	"authors": [
+		{
+			"name": "Ismayil Khayredinov",
+			"email": "info@hypejunction.com"
+		}
+	],
+	"require-dev": {
+		"composer/installers": "1.*"
+	},
+	"autoload": {
+		"psr-0": {
+			"": "classes/"
+		}
+	}
+}
