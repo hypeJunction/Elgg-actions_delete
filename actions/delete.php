@@ -26,6 +26,8 @@ if (!$display_name) {
 	$display_name = elgg_echo('actions:delete:item');
 }
 
+$type = $entity->getType();
+$subtype = $entity->getSubtype();
 $container = $entity->getContainerEntity();
 
 if ($entity->delete()) {
@@ -45,7 +47,18 @@ if ($entity->delete()) {
 		}
 	}
 
-	system_message(elgg_echo('actions:delete:success', array($display_name)));
+	$success_keys = array(
+		"actions:delete:$type:$subtype:success",
+		"actions:delete:$type:success",
+		"actions:delete:success",
+	);
+
+	foreach ($success_keys as $success_key) {
+		if (elgg_language_key_exists($success_key)) {
+			system_message(elgg_echo($success_key, array($display_name)));
+			break;
+		}
+	}
 	forward($forward_url);
 } else {
 	register_error(elgg_echo('actions:delete:error'));
