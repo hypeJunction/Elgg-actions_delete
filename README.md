@@ -2,6 +2,7 @@ Delete Action
 =============
 ![Elgg 1.11](https://img.shields.io/badge/Elgg-1.11.x-orange.svg?style=flat-square)
 ![Elgg 1.12](https://img.shields.io/badge/Elgg-1.12.x-orange.svg?style=flat-square)
+![Elgg 2.x](https://img.shields.io/badge/Elgg-2.x-orange.svg?style=flat-square)
 
 Generic delete action controller
 
