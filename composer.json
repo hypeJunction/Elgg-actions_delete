@@ -12,13 +12,5 @@
 			"name": "Ismayil Khayredinov",
 			"email": "info@hypejunction.com"
 		}
-	],
-	"require-dev": {
-		"composer/installers": "1.*"
-	},
-	"autoload": {
-		"psr-0": {
-			"": "classes/"
-		}
-	}
+	]
 }
