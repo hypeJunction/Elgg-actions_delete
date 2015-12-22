@@ -17,6 +17,13 @@
 	<requires>
 		<type>elgg_release</type>
 		<version>1.11</version>
+		<comparison>ge</comparison>
+	</requires>
+
+	<requires>
+		<type>elgg_release</type>
+		<version>2.1</version>
+		<comparison>lt</comparison>
 	</requires>
 	
 </plugin_manifest>

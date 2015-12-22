@@ -11,26 +11,16 @@ Generic delete action controller
 ```php
 echo elgg_view('output/url', array(
 	'text' => elgg_view_icon('delete'),
-	'href' => '/action/delete?guid=123",
+	'href' => '/action/entity/delete?guid=123",
 	'is_action' => true,
 ));
 ```
 
-You can alternatively add forward URL:
+You can alternatively add a forward URL:
 
 ```php
-$action_url = elgg_http_add_url_query_elements('/action/delete', array(
+$action_url = elgg_http_add_url_query_elements('/action/entity/delete', array(
 	'guid' => 456,
-	'forward' => '/path/to/forward/to',
-));
-```
-
-You can also use shorthand:
-
-```php
-echo elgg_view('output/url', array(
-	'text' => elgg_echo('delete'),
-	'confirm' => true,
-	'href' => '/delete/567', // this will be routed to an action handler
+	'forward_url' => '/path/to/forward/to',
 ));
 ```
