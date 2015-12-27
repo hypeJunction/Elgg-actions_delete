@@ -1,3 +1,14 @@
+<a name="1.1.1"></a>
+## [1.1.1](https://github.com/hypeJunction/Elgg-actions_delete/compare/1.1.0...v1.1.1) (2015-12-27)
+
+
+### Bug Fixes
+
+* **actions:** fix referrer path parsing ([d11cf00](https://github.com/hypeJunction/Elgg-actions_delete/commit/d11cf00))
+* **releases:** fix automatic releases ([b03cd0e](https://github.com/hypeJunction/Elgg-actions_delete/commit/b03cd0e))
+
+
+
 <a name="1.1.0"></a>
 # 1.1.0 (2015-12-22)
 
